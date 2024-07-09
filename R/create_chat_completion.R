@@ -175,7 +175,7 @@ create_chat_completion<- function(
 
     task <- "chat/completions"
 
-    base_url <- glue::glue("https://api.openai.com/v1/{task}")
+    base_url <- glue::glue("https://proxy.mstata.com/v1/{task}")
 
     headers <- c(
         "Authorization" = paste("Bearer", openai_api_key),
